@@ -1,5 +1,6 @@
 import {React , useEffect, useState} from 'react'
 import { extraerInfo } from '../functions/functions.js'
+import Card from './Card'
 
 const Prueba = () => {
   const [campeones , setCampeones] = useState(null)
@@ -10,6 +11,7 @@ const Prueba = () => {
 
   return (
     <div>
+      <Card></Card>
       {campeones != null ? (
           campeones.map(campeon =>(
               <div key={campeon.id_campeonato}>

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+.Card_Content{
+    width: 17em;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .Card_top{
+    
+  }
+
+.Card_top-img{
+    width: 100%;
+}
+
+.Card_Equipo{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.Card_Categoria{
+    font-size: 2em;
+    font-weight: bold;
+}
+.Card_Torneo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Card_ID{
+    font-size: 0.5em;
+    text-align: end;
+}
+
+.Bottom-card{
+    border-top: 5px solid black;
+}
