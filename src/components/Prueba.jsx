@@ -11,11 +11,23 @@ const Prueba = () => {
 
   return (
     <div>
-      <Card></Card>
+    
       {campeones != null ? (
           campeones.map(campeon =>(
               <div key={campeon.id_campeonato}>
-                <p>ID Campeonato.- {campeon.id_campeonato} .- Equipo.- {campeon.Nombre_Equipo} Liga {campeon.Liga} Categoria .- {campeon.Categoria} - {campeon.Torneo} </p>
+               
+                <Card 
+      url_liga="http://18.188.110.39/public/images/logoed.png"
+      url_Equipo="http://18.188.110.39/public" 
+      url_equipo_campeon="http://18.188.110.39/campeones"
+      equipo={campeon.Escudo}
+      name_equipo={campeon.Nombre_Equipo}
+      categoria={campeon.Categoria}
+      torneo={campeon.Torneo}
+      id_campeonato= {campeon.id_campeonato}
+      liga={campeon.Liga}
+
+      ></Card>
               </div>
           ))
 

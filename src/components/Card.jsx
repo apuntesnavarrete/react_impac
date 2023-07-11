@@ -1,23 +1,25 @@
 import '../card.css';
 import MyImage from '../argentina_campeon.jpg'
 
-function Card() {
+function Card(props) {
     return (
         <div className='Card_Content'>
             <div className='Card_top'>
-                 <img className='Card_top-img' src={MyImage} alt="My Image" />
+                 <img className='Card_top-img' src={props.url_equipo_campeon + name_equipo} alt="imagen equipo campeon" />
             </div>
-            <div className='center-card'>
-                <p className='Card_Equipo'>Limas</p>
-                <p className='Card_Categoria'>Categoria Libre</p>
-                <p className='Card_Torneo'>Clausura 2015</p>
-                <p className='Card_ID'>Campeonato ID.-25</p>
+            <div className='Card-center'>
+                <img className='Card-center_img' src={props.url_Equipo + props.equipo} alt="imagen escudo campeon" />
+
+                <p className='Card_Equipo'>{props.name_equipo}</p>
+                <p className='Card_Categoria'>Categoria {props.categoria}</p>
+                <p className='Card_Torneo'>{props.torneo}</p>
+                <p className='Card_ID'>Campeonato ID.-{props.id_campeonato}</p>
             </div>
-                <div className='Bottom-card'>
-                    <p></p>
+                <div className='Card-Bottom'>
+                <img className='Card-Bottom_img' src={props.url_liga} alt="liga participante" />
                     <div>
                         <p>Campeones</p>
-                        <p>Liga ED</p>
+                        <p>Liga {props.liga}</p>
                     </div>
                 </div>
 
