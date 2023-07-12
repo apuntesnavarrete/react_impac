@@ -1,0 +1,7 @@
+
+.Cards_Content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 25em));
+    justify-content: center;
+
+}

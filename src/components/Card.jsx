@@ -5,7 +5,7 @@ function Card(props) {
     return (
         <div className='Card_Content'>
             <div className='Card_top'>
-                 <img className='Card_top-img' src={props.url_equipo_campeon + name_equipo} alt="imagen equipo campeon" />
+                 <img className='Card_top-img' src={props.url_equipo_campeon + props.name_equipo + ".jpg"} alt="imagen equipo campeon" />
             </div>
             <div className='Card-center'>
                 <img className='Card-center_img' src={props.url_Equipo + props.equipo} alt="imagen escudo campeon" />
