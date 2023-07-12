@@ -1,10 +1,10 @@
 import {React , useEffect, useState} from 'react'
 import { extraerInfo } from '../functions/functions.js'
-import Card from './Card'
+import Card from './Card.jsx'
 import '../cards.css';
 
 
-const Prueba = () => {
+const Campeones = () => {
   const [campeones , setCampeones] = useState(null)
     useEffect(()=>{
         extraerInfo(setCampeones)
@@ -12,6 +12,11 @@ const Prueba = () => {
 
 
   return (
+    <>
+    <header>
+    <h2 className='titulo'>Historial de Campeones</h2>
+    <h2 className='subtitulo'>"Los Heroes Tecamac"</h2>
+    </header>
     <div className='Cards_Content'>
     
       {campeones != null ? (
@@ -35,7 +40,8 @@ const Prueba = () => {
 
       ) : ('no hay personajes')}
     </div>
+    </>
   )
 }
 
-export default Prueba
+export default Campeones

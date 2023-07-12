@@ -18,8 +18,8 @@ function Card(props) {
                 <div className='Card-Bottom'>
                 <img className='Card-Bottom_img' src={props.url_liga} alt="liga participante" />
                     <div>
-                        <p>Campeones</p>
-                        <p>Liga {props.liga}</p>
+                        <p className='Card-Bottom_campeones'>Campeones</p>
+                        <p className='Card-Bottom_liga'>Liga {props.liga}</p>
                     </div>
                 </div>
 

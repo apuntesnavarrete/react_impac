@@ -1,7 +1,7 @@
 import {BrowserRouter, Route , Routes } from 'react-router-dom'
 import Inicio from './components/inicio'
 import Personaje from './components/personaje'
-import Prueba from './components/Prueba'
+import Campeones from './components/Campeones'
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
         <Routes>
           <Route path='/' element={<Inicio></Inicio>}></Route>
           <Route path='/personaje/:id' element={<Personaje></Personaje>}></Route>
-          <Route path='/prueba' element={<Prueba></Prueba>}></Route>
+          <Route path='/Campeones' element={<Campeones></Campeones>}></Route>
 
         </Routes>
       </BrowserRouter>

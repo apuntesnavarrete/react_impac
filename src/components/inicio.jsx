@@ -1,11 +1,16 @@
 import React from 'react'
+import '../cards.css';
 
 const inicio = () => {
 
   
   return (
     <div>
-      <p>soy el inicio</p>
+      <header className='header'>
+        <nav className=''>
+
+        </nav>
+      </header>
     </div>
   )
 }
