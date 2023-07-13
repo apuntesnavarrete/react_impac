@@ -24,7 +24,7 @@ const Campeones = () => {
              
                
                 <Card key={campeon.id_campeonato}
-      url_liga="http://18.188.110.39/public/images/logoed.png"
+      url_liga="http://18.188.110.39/ligas/"
       url_Equipo="http://18.188.110.39/public" 
       url_equipo_campeon="http://18.188.110.39/campeones/"
       equipo={campeon.Escudo}
@@ -33,6 +33,7 @@ const Campeones = () => {
       torneo={campeon.Torneo}
       id_campeonato= {campeon.id_campeonato}
       liga={campeon.Liga}
+      fecha_campeonato={campeon.fecha_campeonato}
 
       ></Card>
               

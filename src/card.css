@@ -57,9 +57,14 @@ body{
     font-size: 1em;
 }
 
+.Card_center_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .Card_ID{
     font-size: 0.8em;
-    text-align: end;
     margin: 1em 0;
 
 }
@@ -80,6 +85,8 @@ body{
     align-items: center;
     padding: 0.5em;
     border-top: 0.2em solid var(--color-visible);
+    height: 6em;
+    
    
 }
 
