@@ -14,6 +14,9 @@ const Campeones = () => {
   return (
     <>
     <header>
+    <div className='publicidad'>
+      <a href='https://www.facebook.com/Impactounder'>Promocion de Uniformes clon da click y CONTACTANOS </a>
+    </div>
     <h2 className='titulo'>Historial de Campeones</h2>
     <h2 className='subtitulo'>"Los Heroes Tecamac"</h2>
     </header>
@@ -39,7 +42,7 @@ const Campeones = () => {
               
           ))
 
-      ) : ('no hay personajes')}
+      ) : ('Problemas con la carga , espere un momento')}
     </div>
     </>
   )
