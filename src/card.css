@@ -115,3 +115,10 @@ font-size: 1.5em;
 .Card-Bottom_liga{
     font-size: 1em;
 }
+
+
+@media (min-width: 1000px) {
+    body {
+      font-size: 10px; /* Tamaño de fuente para pantallas menores a 1000px */
+    }
+  }
